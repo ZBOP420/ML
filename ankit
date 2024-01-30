@@ -1,0 +1,15 @@
+d= {'1': 'Machine Learning', '2': 'Deep Learning', '3': 'Data Mining'}
+print('List of keys: ', list(d.keys()))
+print('List of values: ', list(d.values()))
+print('Value for 1: ', d.get('1'))
+
+d2= {'4': 'Java', '5': 'Data Science'}
+d.update(d2)
+print("Access key at [1,0]: ", list(d.items())[1][0])
+print("Acess key at [1,1]: ", list(d.items())[1][1])
+d.pop('5')
+print('After deletion of key 5', d)
+d.popitem()
+print('After popitem()', d)
+d.clear()
+print(d)
